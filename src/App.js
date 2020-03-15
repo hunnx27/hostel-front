@@ -78,10 +78,10 @@ class App extends Component{
   render(){
     const { classes } = this.props;
     return (
-      <Paper className={classes.root}>
-        <Container width="100%">
+      <div className={classes.root}>
+        <div width="100%" style={{borderBottom:"1px solid #efefef"}}>
           <Header/>
-        </Container>
+        </div>
 
         <Container maxwidth="sm">
         <Table className={classes.table}>
@@ -131,10 +131,10 @@ class App extends Component{
         </Table>
         </Container>
 
-        <Container width="100%">
+        <div width="100%" style={{ borderTop : '1px solid #efefef'}}>
           <Footer/>
-        </Container>
-      </Paper>
+        </div>
+      </div>
     )
   }
 }

@@ -12,9 +12,6 @@ const useStyles = theme => ({
       textAlign: 'center',
       color: theme.palette.text.secondary,
     },
-    footer:{
-        borderTop : '#999999'
-    }
   });
 
   
@@ -22,7 +19,7 @@ const useStyles = theme => ({
       render(){
         const { classes } = this.props;
         return(
-        <Container className={classes.root}>
+        <Container>
             <Grid container spacing={3}>
                 <Grid item xs={3}><img src="https://placeimg.com/200/140/4" alt="logo"/></Grid>    
                 <Grid item xs={3}>

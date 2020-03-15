@@ -21,3 +21,6 @@ npm보다 좀더 나음 비슷함
 3. 깃 푸시하기
 `git push --set-upstream origin master`
 
+## 10. Material UI 셋팅하기
+`npm install @material-ui/core`
+

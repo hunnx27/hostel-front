@@ -3,6 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme =>({
     ad2_wrap:{
+        position:'relative',
        '& img':{
            position:'absolute',
            top:0,

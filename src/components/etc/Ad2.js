@@ -3,12 +3,15 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme =>({
     ad2_wrap:{
+       
+    },
+    ad2_innerWrap:{
+        margin:'0 auto',
+        width:1100,
         position:'relative',
-       '& img':{
-           position:'absolute',
-           top:0,
-           left:0
-       }
+        '& img':{
+            width:'100%'
+        }
     },
     ad2_bg:{
         height:37,
@@ -19,6 +22,15 @@ const styles = theme =>({
         margin:'0 auto',
         textAlign:'center',
         borderBottom:'1px solid #efefef'
+    },
+    comment:{
+        position:'absolute',
+        top:30,
+        width:1100,
+        left:0,
+        textAlign:'center',
+        fontWeight:'bolder',
+        fontSize:20
     }
 })
 class Ad2 extends Component{
@@ -26,9 +38,15 @@ class Ad2 extends Component{
         const { classes } = this.props;
         return(
             <div className={classes.ad2_wrap}>
-                <p className={classes.ad2_bg}></p>
-                <p className={classes.ad2_content}>광고2 영역</p>
-                <img src="https://placeimg.com/1400/80/3"/>
+                <div className={classes.ad2_bg}></div>
+                <div className={classes.ad2_innerWrap}>
+                    <ul>
+                        <li>
+                            <img src="https://placeimg.com/1100/80/3"/>
+                        </li>
+                    </ul>
+                    <p className={classes.comment}>광고2 영역</p>
+                </div>
             </div>
         )
     }

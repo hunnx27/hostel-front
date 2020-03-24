@@ -16,7 +16,11 @@ const styles = theme => ({
         overflow:'hidden'
     },
     logo:{
-        float:'left'
+        float:'left',
+        '& img':{
+            width:230,
+           
+        }
     },
     search_box:{
         float:'left',
@@ -49,7 +53,7 @@ class Header extends Component{
         return(
         <div className={classes.header_wrap}>
             <div className={classes.header_inner_wrap}>
-                <h1 className={classes.logo}><a href="#"><img src="https://placeimg.com/225/60/3"/></a></h1>
+                <h1 className={classes.logo}><a href="#"><img src="/img/HLS Partners-logo-black6.png"/></a></h1>
                 <div className={classes.search_box}>
                     <form className={classes.search_input}>
                         <TextField id="standard-basic" placeholder="원하시는 매물을 검색하세요."/>

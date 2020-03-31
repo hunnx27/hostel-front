@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
+import { Link } from 'react-router-dom'
 
 class Board extends Component{
     render(){
         return(
             <TableRow>
                 <TableCell>{this.props.id}</TableCell>
-                <TableCell><img src={this.props.image} alt="{this.props.name}"/></TableCell>
+                <TableCell><Link to={`/products/${this.props.id}`}><img src={this.props.image} alt="{this.props.name}"/></Link></TableCell>
                 <TableCell>{this.props.productNo}</TableCell>
                 <TableCell>{this.props.region}</TableCell>
-                <TableCell>{this.props.title}</TableCell>
-                <TableCell>{this.props.subtitle}</TableCell>
+                <TableCell><Link to={`/products/${this.props.id}`}>{this.props.title}</Link></TableCell>
+                <TableCell><Link to={`/products/${this.props.id}`}>{this.props.subtitle}</Link></TableCell>
                 <TableCell>{this.props.guaranteePrice}</TableCell>
                 <TableCell>{this.props.monthPrice}</TableCell>
                 <TableCell>{this.props.wishRightPrice}</TableCell>

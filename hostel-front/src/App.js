@@ -9,6 +9,8 @@ import FooterWrap from './components/footer/FooterWrap';
 import { withStyles } from '@material-ui/core/styles';
 import './App.css';
 
+
+
 const styles = theme => ({
   
 })
@@ -18,7 +20,7 @@ class App extends Component{
     const { classes } = this.props;
     return (
       <div>
-        <Ad1/>
+        {/*<Ad1/>*/}
         <HeaderWrap/>
         <Ad2/>
         <ContentWrap/>

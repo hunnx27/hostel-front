@@ -27,8 +27,9 @@ npm보다 좀더 나음 비슷함
 ## 11. webpack 설치
 `npm install --save-dev webpack webpack-dev-server webpack-cli`
 
-
-
+## 12. 라우터 셋팅
+`npm install --save react-router`
+`npm install --save react-router-dom`
 
 
 

@@ -19,6 +19,7 @@ const styles = theme => ({
         float:'left',
         '& img':{
             width:230,
+            marginTop:15
            
         }
     },
@@ -53,7 +54,7 @@ class Header extends Component{
         return(
         <div className={classes.header_wrap}>
             <div className={classes.header_inner_wrap}>
-                <h1 className={classes.logo}><a href="#"><img src="/img/HLS Partners-logo-black6.png"/></a></h1>
+                <h1 className={classes.logo}><a href="#"><img src={'/img/HLSPartners-logo7.png'}/></a></h1>
                 <div className={classes.search_box}>
                     <form className={classes.search_input}>
                         <TextField id="standard-basic" placeholder="원하시는 매물을 검색하세요."/>

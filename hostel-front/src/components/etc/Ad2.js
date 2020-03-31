@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, StylesProvider } from '@material-ui/core/styles';
 
 const styles = theme =>({
     ad2_wrap:{
@@ -8,6 +8,7 @@ const styles = theme =>({
     ad2_innerWrap:{
         margin:'0 auto',
         width:1100,
+        border:'1px solid',
         position:'relative',
         '& img':{
             width:'100%'
